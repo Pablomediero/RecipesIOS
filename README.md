@@ -11,25 +11,25 @@ Para la interfaz de usuario he combinado el patrón de diseño MVVM (Model-View-
 
 | **Capa**              | **Función** |
 | ---                   | ---       |
-| **Const**             |    Gestión de constantes.      |
-| **Data**               |    Gestión de datos.    |
-| **Entities**           |    Modelos de la aplicación.    |
-| **Features**            |    Vistas de la aplicación.    |
-| **NetworkClient**     |    Gestión de Api y servicios de red.    |
-| **UseCases**     |   Definición de casos de uso.    |
+| **Const**             |    Centralizo todas las constantes relevantes para la aplicación en esta capa.      |
+| **Data**               |    En esta capa, nos enfocamos en la manipulación de datos y la interacción con la capa de almacenamiento local y remoto. SwiftData es mi elección para la base de datos local, garantizando un almacenamiento seguro y eficiente de datos.    |
+| **Entities**           |    Defino modelos específicos para la aplicación en esta capa, asegurando una representación clara y consistente de los datos.    |
+| **Features**            |    Aquí se encuentra la lógica de presentación y las vistas de la aplicación.   |
+| **NetworkClient**     |    Esta capa se encarga de la gestión de la comunicación con API y servicios de red.    |
+| **UseCases**     |   Aquí defino los casos de uso de la aplicación, centrando la lógica de negocio.    |
 
 ## Herramientas 
 Herramientas que he utilizado en esta aplicación. 
 
-- **SwiftData:** Base de datos local.
+- **SwiftData:** Utilizado como sistema de base de datos local para un almacenamiento persistente y eficiente.
 
-- **Patrón Coordinator - @EnvironmentObject:** Inyector de dependencias.
+- **Patrón Coordinator - @EnvironmentObject:** Opté por el patrón Coordinator para la gestión de navegación y vistas, y utilicé @EnvironmentObject para inyectar dependencias de manera eficiente.
 
-- **NavigationLink - NavigationLink** Gestión de navegación y vistas.
+- **NavigationLink - NavigationLink** Esta herramienta simplifica la gestión de la navegación y vistas en la aplicación.
 
-- **@Publidhed - ObservableObject:** Gestión de datos.
+- **@Publidhed - ObservableObject:** Esencial para la gestión reactiva de datos, asegurando actualizaciones en tiempo real en la interfaz de usuario.
 
-- [SlidingTabView](https://github.com/QuynhNguyen/SlidingTabView): Barra de navegación entre vistas.
+- [SlidingTabView](https://github.com/QuynhNguyen/SlidingTabView): Integro SlidingTabView para una barra de navegación entre vistas, proporcionando una experiencia de usuario moderna y fluida.
 
 ## Chatgpt API 
 
